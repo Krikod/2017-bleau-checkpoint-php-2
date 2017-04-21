@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="container text-center">
+    <div class="col-md-8 col-md-offset-2">
+
+        {# Affichage de la card selectionné #}
+        <div class="row">
+            <img src="{{ selectedCard.picture }}" alt="card n° {{ selectedCard.nbcard }}">
+        </div>
+        <div class="row">
+
+            {# Si previousCard reçu du controller n'est pas vide, cela signifie qu'il y a une page précédente donc on affiche la flèche #}
+            {% if previousCard is not empty %}
+                <a class="btn btn-lg" href="{{ path('show_card', {'nbcard': selectedCard.nbcard - 1 }) }}"><span class="glyphicon glyphicon-arrow-left"></span></a>
+            {% endif %}
+
+            {# Si nextCard reçu du controller n'est pas vide, cela signifie qu'il y a une page suivante donc on affiche la flèche #}
+            {% if nextCard is not empty %}
+                <a class="btn btn-lg" href="{{ path('show_card', {'nbcard': selectedCard.nbcard + 1 }) }}"><span class="glyphicon glyphicon-arrow-right"></span></a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
