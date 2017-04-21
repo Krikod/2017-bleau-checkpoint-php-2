@@ -50,4 +50,18 @@ class AlgoController extends Controller
         // implode(' ', $tab) renvéra 'Il fait chaud'
         return implode (' ', $tabLength);
     }
+
+    //Autre solution =
+//$stringSliced = explode(" ", $string);
+//
+//if($order == "ASC" )
+//{
+//array_multisort(array_map('strlen', $stringSliced),SORT_ASC, $stringSliced);
+//return $stringreturned = implode(" ", $stringSliced);
+//}
+//if($order == "DESC" )
+//{
+//    array_multisort(array_map('strlen', $stringSliced),SORT_DESC, $stringSliced);
+//    return $stringreturned = implode(" ", $stringSliced);
+//}
 }
