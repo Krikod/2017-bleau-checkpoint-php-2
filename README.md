@@ -15,7 +15,3 @@ cd name_folder
 ```
 composer install
 ```
-#### Installation des assets
-```
-php bin/console assets:install
-```
