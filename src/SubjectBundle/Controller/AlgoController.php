@@ -58,6 +58,3 @@ $max = -1;
     }
 }
 
-$tri = new AlgoController("il fait chaud", "ASC");
-
-...?
