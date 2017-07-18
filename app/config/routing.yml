@@ -2,8 +2,11 @@ commit_strip:
     resource: "@CommitStripBundle/Resources/config/routing.yml"
     prefix:   /
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 990f10883f909c8a60d1f02e456f01d30b24ddc0
 subject:
     resource: "@SubjectBundle/Controller/"
     type:     annotation

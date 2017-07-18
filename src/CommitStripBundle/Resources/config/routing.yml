@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 commit_strip_homepage:
     path:     /
     defaults: { _controller: CommitStripBundle:Default:index }
+=======
+show_card:
+    path:     /story/{nbcard}
+    defaults: { _controller: CommitStripBundle:Default:index, nbcard: 1 }
+    # Si jamais nbcard n'est pas défini, la valeur par default sera 1 (la première page)
+    # Se sera le cas lors du premier chargement, en effet, on arrive sur la page, on veut voir s'afficher la première image, sans avoir à le spécifié
+>>>>>>> 990f10883f909c8a60d1f02e456f01d30b24ddc0

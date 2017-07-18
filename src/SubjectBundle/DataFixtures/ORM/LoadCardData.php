@@ -37,5 +37,10 @@ class LoadCardData implements FixtureInterface
         }
         $manager->flush();
     }
+<<<<<<< HEAD
 }
 
+=======
+
+}
+>>>>>>> 990f10883f909c8a60d1f02e456f01d30b24ddc0
